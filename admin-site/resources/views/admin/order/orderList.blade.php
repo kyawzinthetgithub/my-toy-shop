@@ -56,7 +56,7 @@
                     @endforeach
                 </tbody>
             </table>
-            <div class="">{{ $orders->links() }}</div>
+            <div class="d-flex justify-content-end">{{ $orders->links() }}</div>
         </div>
     @else
         <div class="d-flex justify-content-center mt-5">

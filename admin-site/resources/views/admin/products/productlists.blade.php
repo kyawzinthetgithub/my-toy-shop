@@ -61,10 +61,10 @@
                                 <td class="align-middle">
                                     @if ($product->image)
                                         <img src="{{ asset('/storage/products/' . $product->image) }}" class="img-thumbnail"
-                                            width="60px" style="height:70px;">
+                                            width="70px" style="height:75px;">
                                     @else
                                         <img src="{{ asset('storage/defaultImg.jpg') }}" class="img-thumbnail"
-                                            width="60px" style="height:70px;">
+                                            width="70px" style="height:75px;">
                                     @endif
                                 </td>
                                 <td class="align-middle text-capitalize">{{ $product->product_name }}</td>
@@ -85,11 +85,11 @@
                         @endforeach
                     </tbody>
                 </table>
-                <div class="">{{ $products->links() }}</div>
+                <div class="d-flex justify-content-end">{{ $products->links() }}</div>
             </div>
         @else
             <div class="d-flex justify-content-center mt-5">
-                <h5>There is no product !</h5>
+                <h5 class="text-danger">There is no product !</h5>
             </div>
         @endif
 

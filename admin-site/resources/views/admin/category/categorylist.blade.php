@@ -56,10 +56,10 @@
                                 <td>
                                     @if ($data->image)
                                         <img src="{{ asset('/storage/category/' . $data->image) }}" class="img-thumbnail"
-                                            width="60px" style="height: 70px;">
+                                            width="70px" style="height: 75px;">
                                     @else
                                         <img src="{{ asset('storage/defaultImg.jpg') }}" class="img-thumbnail"
-                                            width="60px" style="height: 70px;">
+                                            width="70px" style="height: 75px;">
                                     @endif
                                 </td>
                                 <td class="align-middle">{{ $data->category_name }}</td>
@@ -76,11 +76,11 @@
                         @endforeach
                     </tbody>
                 </table>
-                <div class="">{{ $datas->links() }}</div>
+                <div class="d-flex justify-content-end">{{ $datas->links() }}</div>
             </div>
         @else
             <div class="d-flex justify-content-center mt-5">
-                <h5>There is no data !</h5>
+                <h5 class="text-danger">There is no data !</h5>
             </div>
         @endif
 

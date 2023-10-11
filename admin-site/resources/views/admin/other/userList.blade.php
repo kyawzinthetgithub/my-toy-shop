@@ -72,7 +72,7 @@
                     @endforeach
                 </tbody>
             </table>
-            <div>{{$users->links()}}</div>
+            <div class="d-flex justify-content-end">{{$users->links()}}</div>
         </div>
         @else
         <div class="d-flex justify-content-center align-items-center">

@@ -22,7 +22,7 @@ export default ({
         ...mapGetters(['storeUserToken','storeUserData']),
         showCategory() {
             return this.categoryList.slice(0, this.visibleCate)
-          }
+          },
     },
     methods: {
 

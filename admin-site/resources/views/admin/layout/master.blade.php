@@ -42,7 +42,7 @@
                             <span class="hide-menu">Home</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link links" href="{{ route('admin#dashboard') }}" aria-expanded="false">
+                            <a class="sidebar-link links {{'dashboard' == request()->path() ? 'active' : ''}}" href="{{ route('admin#dashboard') }}" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-layout-dashboard"></i>
                                 </span>
@@ -54,7 +54,7 @@
                             <span class="hide-menu">Product Manangments</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link links" href="{{ route('admin#categoryList') }}"
+                            <a class="sidebar-link links {{'admin/category/list' == request()->path() ? 'active' : ''}}" href="{{ route('admin#categoryList') }}"
                                 aria-expanded="false">
                                 <span>
                                     <i class="ti ti-article"></i>
@@ -63,7 +63,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link links" href="{{ route('admin#productList') }}" aria-expanded="false">
+                            <a class="sidebar-link links {{'admin/product/list' == request()->path() ? 'active' : ''}}" href="{{ route('admin#productList') }}" aria-expanded="false">
                                 <span>
                                     <i class="fa-solid fa-shop"></i>
                                 </span>
@@ -71,7 +71,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link links" href="{{route('admin#orderList')}}" aria-expanded="false">
+                            <a class="sidebar-link links {{'admin/order/list' == request()->path() ? 'active' : ''}}" href="{{route('admin#orderList')}}" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-cards"></i>
                                 </span>
@@ -83,7 +83,7 @@
                             <span class="hide-menu">Others</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link links" href="{{route('admin#adminList')}}" aria-expanded="false">
+                            <a class="sidebar-link links {{'admin/AdminList' == request()->path() ? 'active' : ''}}" href="{{route('admin#adminList')}}" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-file-description"></i>
                                 </span>
@@ -91,7 +91,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link links" href="{{route('admin#userList')}}" aria-expanded="false">
+                            <a class="sidebar-link links {{'admin/userList' == request()->path() ? 'active' : ''}}" href="{{route('admin#userList')}}" aria-expanded="false">
                                 <span>
                                     <i class="fa-solid fa-users"></i>
                                 </span>
@@ -99,7 +99,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link links" href="{{route('admin#contactMessage')}}" aria-expanded="false">
+                            <a class="sidebar-link links {{'admin/customer/contact' == request()->path() ? 'active' : ''}}" href="{{route('admin#contactMessage')}}" aria-expanded="false">
                                 <span>
                                     <i class="fa-solid fa-comment-dots"></i>
                                 </span>

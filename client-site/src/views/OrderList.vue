@@ -30,13 +30,13 @@
               </td>
               <td class="align-middle">
                 <span v-if="orders.status == 0" class="text-warning fw-bold"
-                  >Pending...</span
+                  >Pending <i class="fa-solid fa-circle-exclamation"></i></span
                 >
                 <span v-if="orders.status == 1" class="text-success fw-bold"
-                  >Success...</span
+                  >Success <i class="fa-solid fa-check"></i></span
                 >
                 <span v-if="orders.status == 2" class="text-danger fw-bold"
-                  >Reject...</span
+                  >Reject <i class="fa-solid fa-xmark"></i></span
                 >
               </td>
             </tr>

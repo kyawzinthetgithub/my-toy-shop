@@ -150,8 +150,12 @@ export default {
   box-shadow: none;
 }
 
-.nav-item .nav-link.active {
-  color: #fff;
+.nav-link{
+  color: #8d8686 !important;
+}
+
+.nav-link.router-link-active{
+  color: #d6d07a !important;
   transition: 0.5s ease-in;
 }
 </style>

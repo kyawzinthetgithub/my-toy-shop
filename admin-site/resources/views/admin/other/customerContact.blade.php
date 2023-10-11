@@ -82,7 +82,7 @@
                 @else
                     <h4 class="text-center text-danger mt-5">There is no message !</h4>
                 @endif
-                <div class="mt-3">{{$messages->links()}}</div>
+                <div class="d-flex justify-content-end mt-3">{{$messages->links()}}</div>
             </div>
         </div>
 

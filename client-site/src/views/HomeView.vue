@@ -63,7 +63,7 @@
                 There is no product...
               </h3>
               <div
-                class="col-md-4 col-sm-12 mb-2"
+                class="col-sm-6 col-md-4 mb-2"
                 v-for="(product, index) in productList.data"
                 :key="index"
                 v-else-if="productList.data != 0"
@@ -91,7 +91,7 @@
             </div>
             <div class="d-flex justify-content-end mt-5">
               <paginate
-              :page-count='productList.last_page'
+              :page-count="Number(productList.last_page)"
               :page-range="2"
               :click-handler="getallProduct"
               :prev-text="'Prev'"

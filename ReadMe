@@ -5,6 +5,12 @@ You need to make sure already install php,composer,apache (Xampp) or anyother an
 
 admin site with laravel
     
+Used these packages in admin-site
+1 - bootstrap
+2 - jQuery
+3 - fontawesome
+4 - chart js
+
 -to serve project
  1.add new db table in php_my_admin 
  2.declare php_my_admin table name in DB_DATABASE = tablename
@@ -30,7 +36,7 @@ do these following steps
 
 
 to serve client-site (VUE3)
-I used these packages
+Used these packages
     "axios": "^1.5.0",
     "bootstrap": "^5.3.1",
     "vue-loading-overlay": "^6.0.3",
